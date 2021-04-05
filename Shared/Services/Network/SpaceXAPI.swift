@@ -20,4 +20,30 @@ enum SpaceXAPI {
             .map(\.value)
             .eraseToAnyPublisher()
     }
+
+    static func pastLaunches() -> AnyPublisher<[Launch], Error> {
+        let request = URLRequest(url: base.appendingPathComponent("launches/past"))
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .custom({ (decoder) -> Date in
+            let container = try decoder.singleValueContainer()
+            let dateStr = try container.decode(String.self)
+
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
+            if let date = formatter.date(from: dateStr) {
+                return date
+            } else {
+                formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                if let date = formatter.date(from: dateStr) {
+                    return date
+                }
+            }
+
+            return Date()
+        })
+        return agent
+            .run(request, decoder)
+            .map(\.value)
+            .eraseToAnyPublisher()
+    }
 }

@@ -14,6 +14,10 @@ struct MainView: View {
                 .tabItem {
                     Label("Dragon", systemImage: "d.circle")
                 }
+            PastLaunchesListView()
+                .tabItem {
+                    Label("Past Launches", systemImage: "d.circle")
+                }
         }
     }
 }

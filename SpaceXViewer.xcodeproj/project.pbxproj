@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D03B86B9261B342F00DDBE91 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B86B8261B342F00DDBE91 /* Launch.swift */; };
+		D03B86BA261B342F00DDBE91 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B86B8261B342F00DDBE91 /* Launch.swift */; };
+		D03B86C0261B3AD500DDBE91 /* PastLaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B86BF261B3AD500DDBE91 /* PastLaunchesViewModel.swift */; };
+		D03B86C1261B3AD500DDBE91 /* PastLaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B86BF261B3AD500DDBE91 /* PastLaunchesViewModel.swift */; };
+		D03B86C7261B3B9B00DDBE91 /* PastLaunchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B86C6261B3B9B00DDBE91 /* PastLaunchesListView.swift */; };
+		D03B86C8261B3B9B00DDBE91 /* PastLaunchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B86C6261B3B9B00DDBE91 /* PastLaunchesListView.swift */; };
 		D08111212618C7CC004ED2D0 /* SpaceXViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081110E2618C7CB004ED2D0 /* SpaceXViewerApp.swift */; };
 		D08111222618C7CC004ED2D0 /* SpaceXViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081110E2618C7CB004ED2D0 /* SpaceXViewerApp.swift */; };
 		D08111232618C7CC004ED2D0 /* DragonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081110F2618C7CB004ED2D0 /* DragonsListView.swift */; };
@@ -36,6 +42,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D03B86B8261B342F00DDBE91 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		D03B86BF261B3AD500DDBE91 /* PastLaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchesViewModel.swift; sourceTree = "<group>"; };
+		D03B86C6261B3B9B00DDBE91 /* PastLaunchesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchesListView.swift; sourceTree = "<group>"; };
 		D081110E2618C7CB004ED2D0 /* SpaceXViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXViewerApp.swift; sourceTree = "<group>"; };
 		D081110F2618C7CB004ED2D0 /* DragonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListView.swift; sourceTree = "<group>"; };
 		D08111102618C7CC004ED2D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +83,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D03B86B7261B342000DDBE91 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				D03B86B8261B342F00DDBE91 /* Launch.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		D03B86C4261B3B7F00DDBE91 /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				D03B86C5261B3B8700DDBE91 /* Past */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		D03B86C5261B3B8700DDBE91 /* Past */ = {
+			isa = PBXGroup;
+			children = (
+				D03B86C6261B3B9B00DDBE91 /* PastLaunchesListView.swift */,
+			);
+			path = Past;
+			sourceTree = "<group>";
+		};
 		D08111082618C7CB004ED2D0 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +166,7 @@
 		D08111332618C877004ED2D0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D03B86B7261B342000DDBE91 /* Launch */,
 				D08111502618CED2004ED2D0 /* ViewModels */,
 				D08111342618C87E004ED2D0 /* Dragon */,
 			);
@@ -160,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				D08111512618CEE0004ED2D0 /* DragonsViewModel.swift */,
+				D03B86BF261B3AD500DDBE91 /* PastLaunchesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -167,6 +202,7 @@
 		D0F7F2A12619BEEC00768B36 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D03B86C4261B3B7F00DDBE91 /* Launches */,
 				D0F7F2C3261A137D00768B36 /* Main */,
 				D0F7F2AF2619CED900768B36 /* Shared */,
 				D0F7F2A22619BEF500768B36 /* Dragon */,
@@ -302,6 +338,7 @@
 				D08111232618C7CC004ED2D0 /* DragonsListView.swift in Sources */,
 				D0F7F2C5261A138400768B36 /* MainView.swift in Sources */,
 				D08111452618CC87004ED2D0 /* Agent.swift in Sources */,
+				D03B86C7261B3B9B00DDBE91 /* PastLaunchesListView.swift in Sources */,
 				D08111212618C7CC004ED2D0 /* SpaceXViewerApp.swift in Sources */,
 				D0F7F2BA2619D90F00768B36 /* RemoteImage.swift in Sources */,
 				D0F7F2A42619BF1700768B36 /* DragonDetailView.swift in Sources */,
@@ -309,6 +346,8 @@
 				D0F7F2B12619CEF200768B36 /* HeaderContentTextView.swift in Sources */,
 				D08111362618C88B004ED2D0 /* Dragon.swift in Sources */,
 				D0F7F2AB2619CA5700768B36 /* DragonGeneralInfoView.swift in Sources */,
+				D03B86B9261B342F00DDBE91 /* Launch.swift in Sources */,
+				D03B86C0261B3AD500DDBE91 /* PastLaunchesViewModel.swift in Sources */,
 				D0F7F2BF261A0C2700768B36 /* ImageCaroussel.swift in Sources */,
 				D081114C2618CDE6004ED2D0 /* SpaceXAPI.swift in Sources */,
 			);
@@ -321,6 +360,7 @@
 				D08111242618C7CC004ED2D0 /* DragonsListView.swift in Sources */,
 				D0F7F2C6261A138400768B36 /* MainView.swift in Sources */,
 				D08111462618CC87004ED2D0 /* Agent.swift in Sources */,
+				D03B86C8261B3B9B00DDBE91 /* PastLaunchesListView.swift in Sources */,
 				D08111222618C7CC004ED2D0 /* SpaceXViewerApp.swift in Sources */,
 				D0F7F2BB2619D90F00768B36 /* RemoteImage.swift in Sources */,
 				D0F7F2A52619BF1700768B36 /* DragonDetailView.swift in Sources */,
@@ -328,6 +368,8 @@
 				D0F7F2B22619CEF200768B36 /* HeaderContentTextView.swift in Sources */,
 				D08111372618C88B004ED2D0 /* Dragon.swift in Sources */,
 				D0F7F2AC2619CA5700768B36 /* DragonGeneralInfoView.swift in Sources */,
+				D03B86BA261B342F00DDBE91 /* Launch.swift in Sources */,
+				D03B86C1261B3AD500DDBE91 /* PastLaunchesViewModel.swift in Sources */,
 				D0F7F2C0261A0C2700768B36 /* ImageCaroussel.swift in Sources */,
 				D081114D2618CDE6004ED2D0 /* SpaceXAPI.swift in Sources */,
 			);
