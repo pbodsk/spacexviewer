@@ -12,9 +12,7 @@ struct DragonDetailView: View {
     var body: some View {
         VStack(alignment: .leading)
         {
-            Text(dragon.name)
-                .font(.title)
-                .fontWeight(.bold)
+            Header(title: dragon.name)
                 .padding(.bottom)
             if let description = dragon.description {
                 Text(description)

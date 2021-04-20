@@ -10,13 +10,13 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            DragonsListView()
-                .tabItem {
-                    Label("Dragon", systemImage: "d.circle")
-                }
             PastLaunchesListView()
                 .tabItem {
                     Label("Past Launches", systemImage: "d.circle")
+                }
+            DragonsListView()
+                .tabItem {
+                    Label("Dragon", systemImage: "d.circle")
                 }
         }
     }

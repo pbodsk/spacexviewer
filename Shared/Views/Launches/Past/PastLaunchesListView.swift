@@ -12,8 +12,13 @@ struct PastLaunchesListView: View {
     var viewModel = PastLaunchesViewModel()
 
     var body: some View {
-        List(viewModel.pastLaunches, id: \.flightNumber) { launch in
-            Text(launch.name)
+        NavigationView {
+            List(viewModel.pastLaunches, id: \.flightNumber) { launch in
+                NavigationLink(
+                    destination: PastLaunchDetailView(launch: launch)) {
+                        Text(launch.name)
+                    }
+            }
         }
         .onAppear {
             viewModel.loadLaunches()

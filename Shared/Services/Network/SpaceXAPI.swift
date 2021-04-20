@@ -8,6 +8,10 @@
 import Combine
 import Foundation
 
+enum SpaceXApiError: Error {
+    case invalidDateError
+}
+
 enum SpaceXAPI {
     static let agent = Agent()
     static let base = URL(string: "https://api.spacexdata.com/v4")!
@@ -38,8 +42,7 @@ enum SpaceXAPI {
                     return date
                 }
             }
-
-            return Date()
+            throw SpaceXApiError.invalidDateError
         })
         return agent
             .run(request, decoder)

@@ -27,6 +27,12 @@
 		D081114D2618CDE6004ED2D0 /* SpaceXAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081114B2618CDE6004ED2D0 /* SpaceXAPI.swift */; };
 		D08111522618CEE0004ED2D0 /* DragonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08111512618CEE0004ED2D0 /* DragonsViewModel.swift */; };
 		D08111532618CEE0004ED2D0 /* DragonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08111512618CEE0004ED2D0 /* DragonsViewModel.swift */; };
+		D0F3173E262F34C700408820 /* PastLaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3173D262F34C700408820 /* PastLaunchDetailView.swift */; };
+		D0F3173F262F34C700408820 /* PastLaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3173D262F34C700408820 /* PastLaunchDetailView.swift */; };
+		D0F31743262F37A600408820 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F31742262F37A600408820 /* Header.swift */; };
+		D0F31744262F37A600408820 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F31742262F37A600408820 /* Header.swift */; };
+		D0F31748262F3F0100408820 /* PastLaunchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F31747262F3F0100408820 /* PastLaunchDetailsView.swift */; };
+		D0F31749262F3F0100408820 /* PastLaunchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F31747262F3F0100408820 /* PastLaunchDetailsView.swift */; };
 		D0F7F2A42619BF1700768B36 /* DragonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F7F2A32619BF1700768B36 /* DragonDetailView.swift */; };
 		D0F7F2A52619BF1700768B36 /* DragonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F7F2A32619BF1700768B36 /* DragonDetailView.swift */; };
 		D0F7F2AB2619CA5700768B36 /* DragonGeneralInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F7F2AA2619CA5700768B36 /* DragonGeneralInfoView.swift */; };
@@ -57,6 +63,9 @@
 		D08111442618CC87004ED2D0 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
 		D081114B2618CDE6004ED2D0 /* SpaceXAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPI.swift; sourceTree = "<group>"; };
 		D08111512618CEE0004ED2D0 /* DragonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsViewModel.swift; sourceTree = "<group>"; };
+		D0F3173D262F34C700408820 /* PastLaunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchDetailView.swift; sourceTree = "<group>"; };
+		D0F31742262F37A600408820 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		D0F31747262F3F0100408820 /* PastLaunchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchDetailsView.swift; sourceTree = "<group>"; };
 		D0F7F2A32619BF1700768B36 /* DragonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonDetailView.swift; sourceTree = "<group>"; };
 		D0F7F2AA2619CA5700768B36 /* DragonGeneralInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonGeneralInfoView.swift; sourceTree = "<group>"; };
 		D0F7F2B02619CEF200768B36 /* HeaderContentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderContentTextView.swift; sourceTree = "<group>"; };
@@ -103,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				D03B86C6261B3B9B00DDBE91 /* PastLaunchesListView.swift */,
+				D0F3173D262F34C700408820 /* PastLaunchDetailView.swift */,
+				D0F31747262F3F0100408820 /* PastLaunchDetailsView.swift */,
 			);
 			path = Past;
 			sourceTree = "<group>";
@@ -224,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				D0F7F2B02619CEF200768B36 /* HeaderContentTextView.swift */,
+				D0F31742262F37A600408820 /* Header.swift */,
 				D0F7F2B92619D90F00768B36 /* RemoteImage.swift */,
 				D0F7F2BE261A0C2700768B36 /* ImageCaroussel.swift */,
 			);
@@ -335,13 +347,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F31748262F3F0100408820 /* PastLaunchDetailsView.swift in Sources */,
 				D08111232618C7CC004ED2D0 /* DragonsListView.swift in Sources */,
 				D0F7F2C5261A138400768B36 /* MainView.swift in Sources */,
 				D08111452618CC87004ED2D0 /* Agent.swift in Sources */,
 				D03B86C7261B3B9B00DDBE91 /* PastLaunchesListView.swift in Sources */,
 				D08111212618C7CC004ED2D0 /* SpaceXViewerApp.swift in Sources */,
 				D0F7F2BA2619D90F00768B36 /* RemoteImage.swift in Sources */,
+				D0F3173E262F34C700408820 /* PastLaunchDetailView.swift in Sources */,
 				D0F7F2A42619BF1700768B36 /* DragonDetailView.swift in Sources */,
+				D0F31743262F37A600408820 /* Header.swift in Sources */,
 				D08111522618CEE0004ED2D0 /* DragonsViewModel.swift in Sources */,
 				D0F7F2B12619CEF200768B36 /* HeaderContentTextView.swift in Sources */,
 				D08111362618C88B004ED2D0 /* Dragon.swift in Sources */,
@@ -357,13 +372,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F31749262F3F0100408820 /* PastLaunchDetailsView.swift in Sources */,
 				D08111242618C7CC004ED2D0 /* DragonsListView.swift in Sources */,
 				D0F7F2C6261A138400768B36 /* MainView.swift in Sources */,
 				D08111462618CC87004ED2D0 /* Agent.swift in Sources */,
 				D03B86C8261B3B9B00DDBE91 /* PastLaunchesListView.swift in Sources */,
 				D08111222618C7CC004ED2D0 /* SpaceXViewerApp.swift in Sources */,
 				D0F7F2BB2619D90F00768B36 /* RemoteImage.swift in Sources */,
+				D0F3173F262F34C700408820 /* PastLaunchDetailView.swift in Sources */,
 				D0F7F2A52619BF1700768B36 /* DragonDetailView.swift in Sources */,
+				D0F31744262F37A600408820 /* Header.swift in Sources */,
 				D08111532618CEE0004ED2D0 /* DragonsViewModel.swift in Sources */,
 				D0F7F2B22619CEF200768B36 /* HeaderContentTextView.swift in Sources */,
 				D08111372618C88B004ED2D0 /* Dragon.swift in Sources */,
